@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-bt">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora</title>
+    <link rel="stylesheet"  href="style.css"/>
+    <meta charset="utf-8">
+    <script src="script.js"></script>
+
+    <!--JavaScript at end of body for optimized loading-->
+    <script type="text/javascript" src="materialize/js/materialize.min.js"></script>
+
+    <!--Import Google Icon Font-->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!--Import materialize.css-->
+    <link type="text/css" rel="stylesheet" href="materialize/css/materialize.min.css"  media="screen,projection"/>
+
+</head>
+<body>
+    <h1>Calculadora</h1>
+
+    <center><div id="fundo">
+        <br/>
+        <center><p id="resultado"> <p></p></center>
+        <div name=teclas id=teclas>
+
+        <a id="C" class="waves-effect waves-light btn" onclick="clean()">C</a>
+        <a class="waves-effect waves-light btn"onclick="back()"><</a>
+        <a class="waves-effect waves-light btn"onclick="insert('+')">+</a><br/>
+
+        <a class="waves-effect waves-light btn" onclick="insert('7')">7</a>
+        <a class="waves-effect waves-light btn" onclick="insert('8')">8</a>
+        <a class="waves-effect waves-light btn" onclick="insert('9')">9</a>
+        <a class="waves-effect waves-light btn" onclick="insert('-')">-</a>  <br/> 
+
+        <a class="waves-effect waves-light btn" onclick="insert('4')">4</a>
+        <a class="waves-effect waves-light btn" onclick="insert('5')">5</a>
+        <a class="waves-effect waves-light btn" onclick="insert('6')">6</a>
+        <a class="waves-effect waves-light btn" onclick="insert('*')">X</a>  <br/>
+
+        <a class="waves-effect waves-light btn" onclick="insert('1')">1</a>
+        <a class="waves-effect waves-light btn" onclick="insert('2')">2</a>
+        <a class="waves-effect waves-light btn" onclick="insert('3')">3</a>
+        <a class="waves-effect waves-light btn" onclick="insert('/')">/</a> <br/>
+
+        <a class="waves-effect waves-light btn" onclick="insert('0')">0</a>
+        <a id="igual" class="waves-effect waves-light btn" onclick="calcular()">=</a>
+        <br/>
+        </div>
+        <br/>
+    </div></center>
+</body>
+</html>
